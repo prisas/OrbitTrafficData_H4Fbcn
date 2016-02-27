@@ -50,12 +50,6 @@
 
 <body>
 
-   <div id="preloader">
-      <div id="status">
-         <img src="images/preloader.gif" height="64" width="64" alt="">
-      </div>
-   </div>
-
    <!-- Header
    ================================================== -->
    <header>
@@ -81,7 +75,7 @@
 
       <ul class="header-social">
          <li><a href="https://www.facebook.com/orbitdata" target="_blank"><i class="fa fa-facebook"></i></a></li>
-         <li><a href="https://www.twitter.com/Orbit_Traffic"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="https://www.twitter.com/Orbit_Traffic" target="_blank"><i class="fa fa-twitter"></i></a></li>
       </ul>
 
    </header> <!-- Header End -->
@@ -201,39 +195,9 @@
 
     <!--WOLOLO-->
     <section id="extendata" style='display:none;background-image: url("{{ url_for('static', filename='images/background-extend.jpg') }}"); background-repeat: no-repeat; background-attachment: fixed;'>
-              <div class="row feature design">
-
-         <div class="six columns right">
-            <h3>Simple and flowed traffic.</h3>
-
-            <p style="color: black">
-                Can city traffic be more fluid with the use of pressure sensors data? With our datasets and it's accordingly application, traffic can be redirected to improve the more dense streets flow and decrease the traffics jams inside the city.
-            </p>
-         </div>
-
-         <div class="six columns feature-media left">
-             <img src="{{ url_for('static', filename='images/flowed-traffic.png') }}" alt="" />
-         </div>
-
-      </div>
-
-      <div class="row feature cross-browser">
-
-         <div class="six columns right">
-            <h3>Don't get stuck in an emergency.</h3>
-
-            <p style="color: black">Owner of some emergency transport services like ambulances, police cars or fire tracks?<br>
-            Use the data provided by orbit to avoid traffic jams in emergency scenarios by choossing alternatives paths to get to your destination.<br>
-                With Orbit and our cloud data, you mortality can be decreased by 10% in emergenciy situations like this.
-            </p>
-         </div>
-
-         <div class="six columns feature-media left">
-             <img src="{{ url_for('static', filename='images/ambulance-traffic.jpg') }}" alt="" />
-         </div>
-
-      </div>
+      <img style="width: 50%; margin-left:25%; margin-bot: 30em;" src="{{ url_for('static', filename='images/map-legend.png') }}">
    </section>
+   <!--WOLOLO-->
 
    <section id="pricing">
 
