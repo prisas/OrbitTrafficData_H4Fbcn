@@ -119,8 +119,8 @@
          <div class="six columns right">
             <h3>Simple and flowed traffic.</h3>
 
-            <p style="color: black">Lorem ipsum dolor sit amet, ea eum labitur scripserit, illum complectitur deterruisset at pro. Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
-            Nec et amet vidisse mentitum. Cibo mutat nulla ei eam.
+            <p style="color: black">
+                Can city traffic be more fluid with the use of pressure sensors data? With our datasets and it's accordingly application, traffic can be redirected to improve the more dense streets flow and decrease the traffics jams inside the city.
             </p>
          </div>
 
@@ -135,10 +135,9 @@
          <div class="six columns left">
             <h3>Choose the best route.</h3>
 
-            <p style="color: black">Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
-            enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu.
-            Quis nostrum exercitationem ullam corporis suscipit laboriosam.Our library is continually refreshed with the latest on web technology
-            so you'll never fall behind. Quis nostrum exercitationem ullam corporis suscipit laboriosam.
+            <p style="color: black">
+                Have you ever wondered if taking a different mean of transportation than your daily one would be faster to arrive to work that morning?<br>
+                With Orbit you can see the traffic flow on the streets where your bus uses to go, and choose the best alternative way to get your destination.
             </p>
          </div>
 
@@ -153,8 +152,9 @@
          <div class="six columns right">
             <h3>Don't get stuck in an emergency.</h3>
 
-            <p style="color: black">Lorem ipsum dolor sit amet, ea eum labitur scripserit, illum complectitur deterruisset at pro. Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
-            Nec et amet vidisse mentitum. Cibo mutat nulla ei eam.
+            <p style="color: black">Owner of some emergency transport services like ambulances, police cars or fire tracks?<br>
+            Use the data provided by orbit to avoid traffic jams in emergency scenarios by choossing alternatives paths to get to your destination.<br>
+                With Orbit and our cloud data, you mortality can be decreased by 10% in emergenciy situations like this.
             </p>
          </div>
 
@@ -174,10 +174,7 @@
 
          <h1>Instant global data.</h1>
 
-         <p style="color:black;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-         voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-         voluptatem sequi nesciunt.
+         <p style="color:black;">Click your desired country in this interactive map and then select the city you want data from.<br>Many countries are adhered to this program to help their citizens.
          </p>
 
       </div>
@@ -185,12 +182,58 @@
       <div class="row">
 
          <div class="pricing-tables bgrid-quarters s-bgrid-halves">
-            <img src="{{ url_for('static', filename='images/global-map.png') }}" alt="global_map">
+            <img onclick="showhiddenmap123()" src="{{ url_for('static', filename='images/global-map.png') }}" alt="global_map">
          </div>
+
+         <script>
+            function showhiddenmap123() {
+                var doc = document.getElementById('extendata');
+                if (doc.style.display == 'none') doc.style.display = 'block';
+                else {
+                    doc.style.display = 'none';
+                }
+            }
+         </script>
 
       </div>
 
    </section> <!-- Pricing End -->
+
+    <!--WOLOLO-->
+    <section id="extendata" style='display:none;background-image: url("{{ url_for('static', filename='images/background-extend.jpg') }}"); background-repeat: no-repeat; background-attachment: fixed;'>
+              <div class="row feature design">
+
+         <div class="six columns right">
+            <h3>Simple and flowed traffic.</h3>
+
+            <p style="color: black">
+                Can city traffic be more fluid with the use of pressure sensors data? With our datasets and it's accordingly application, traffic can be redirected to improve the more dense streets flow and decrease the traffics jams inside the city.
+            </p>
+         </div>
+
+         <div class="six columns feature-media left">
+             <img src="{{ url_for('static', filename='images/flowed-traffic.png') }}" alt="" />
+         </div>
+
+      </div>
+
+      <div class="row feature cross-browser">
+
+         <div class="six columns right">
+            <h3>Don't get stuck in an emergency.</h3>
+
+            <p style="color: black">Owner of some emergency transport services like ambulances, police cars or fire tracks?<br>
+            Use the data provided by orbit to avoid traffic jams in emergency scenarios by choossing alternatives paths to get to your destination.<br>
+                With Orbit and our cloud data, you mortality can be decreased by 10% in emergenciy situations like this.
+            </p>
+         </div>
+
+         <div class="six columns feature-media left">
+             <img src="{{ url_for('static', filename='images/ambulance-traffic.jpg') }}" alt="" />
+         </div>
+
+      </div>
+   </section>
 
    <section id="pricing">
 
@@ -295,9 +338,11 @@
    <!-- Call-To-Action Section
    ================================================== -->
    <section id="call-to-action">
-
+       <div class="row section-head">
+            <h1>How does it work?</h1>
+        </div>
       <div class="row">
-          <br> Espacio Publicitario
+          <img src="{{ url_for('static', filename='images/tecnologia2.png') }} "
       </div>
 
    </section> <!-- Call-To-Action Section End-->
@@ -309,12 +354,8 @@
 
       <div class="row section-head">
 
-         <h1>Product Screenshots.</h1>
+         <h1>Product Screenshots.</h1><br>
 
-         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-         voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-         </p>
 
       </div>
 
@@ -329,7 +370,7 @@
                   <div class="item-wrap">
 
                      <a href="images/screenshots/big/b-line-icons.jpg" data-imagelightbox="a" >
-                        <img src="images/screenshots/line-icons.jpg" alt="Line Icons">
+                        <img src="{{ url_for('static', filename='images/408.jpg') }}" alt="Model 408 Strip">
                         <div class="overlay"></div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
                      </a>
@@ -341,7 +382,7 @@
                   <div class="item-wrap">
 
                      <a href="images/screenshots/big/b-hipster.jpg" data-imagelightbox="a" >
-                        <img src="images/screenshots/hipster.jpg" alt="Hipster">
+                        <img src="{{ url_for('static', filename='images/408_2.jpg') }}" alt="Model 408 Strip">
                         <div class="overlay"></div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
                      </a>
@@ -353,7 +394,7 @@
                   <div class="item-wrap">
 
                      <a href="images/screenshots/big/b-authentic-vintage.jpg" data-imagelightbox="a" >
-                        <img src="images/screenshots/authentic-vintage.jpg" alt="Authentic Vintage">
+                        <img src="{{ url_for('static', filename='images/408_3.jpg') }}" alt="Model 408">
                         <div class="overlay"></div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
                      </a>
@@ -361,64 +402,7 @@
                   </div>
           		</div> <!-- item end -->
 
-               <div class="columns item">
-                  <div class="item-wrap">
 
-                     <a href="images/screenshots/big/b-spot-uv-logo.jpg" data-imagelightbox="a" >
-                        <img src="images/screenshots/spot-uv-logo.jpg" alt="Spot UV Logo">
-                        <div class="overlay"></div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns item">
-                  <div class="item-wrap">
-
-                     <a href="images/screenshots/big/b-tshirt-mockup.jpg" data-imagelightbox="a" >
-                     	<img src="images/screenshots/tshirt-mockup.jpg" alt="TShirt Mockup">
-                       	<div class="overlay"></div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns item">
-                  <div class="item-wrap">
-
-                     <a href="images/screenshots/big/b-abstract-vector.jpg" data-imagelightbox="a" >
-                        <img src="images/screenshots/abstract-vector.jpg" alt="Abstract Vector">
-                        <div class="overlay"></div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns item">
-                  <div class="item-wrap">
-
-                     <a href="images/screenshots/big/b-embossed-paper.jpg" data-imagelightbox="a" >
-                        <img src="images/screenshots/embossed-paper.jpg" alt="Embossed Paper">
-                        <div class="overlay"></div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns item">
-                  <div class="item-wrap">
-
-                     <a href="images/screenshots/big/b-judah.jpg" data-imagelightbox="a" >
-                        <img src="images/screenshots/judah.jpg" alt="Judah">
-                        <div class="overlay"></div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
           		</div>  <!-- item end -->
 
             </div> <!-- portfolio-wrapper end -->
@@ -433,25 +417,25 @@
 <!-- Testimonials Section
   ================================================== -->
    <section id="testimonials">
- 
+
       <div class="row content">
- 
+
          <span><i class="quote-left fa fa-quote-left"></i></span>
- 
+
          <div class="text-container">
- 
+
             <div class="twelve columns">
- 
+
                <h1>What People Are Saying.</h1>
- 
+
             </div>
- 
+
             <div class="twelve columns flex-container">
- 
+
                <div class="flexslider">
- 
+
                   <ul class="slides">
- 
+
                      <li>
                         <blockquote>
                            <p>With the data powered by Orbit we are able to make smarter decisions when it comes to bus lines
@@ -459,7 +443,7 @@
                            <cite>Mercedes Vidal - TMB President</cite>
                         </blockquote>
                      </li> <!-- slide ends -->
- 
+
                      <li>
                         <blockquote>
                            <p>Thanks to the data gathered by the pressure sensors we are able to make traffic more fluid in
@@ -467,105 +451,103 @@
                            <cite>Ada Colau</cite>
                         </blockquote>
                      </li> <!-- slide ends -->
- 
+
                   </ul>
- 
+
                </div> <!-- div.flexslider ends -->
- 
+
             </div> <!-- div.flex-container ends -->
- 
+
          </div>  <!-- text-container ends -->
- 
+
          <span><i class="quote-right fa fa-quote-right"></i></span>
- 
+
       </div> <!-- row ends -->
- 
+
    </section> <!-- Testimonials Section End-->
- 
- 
+
+
    <!-- Subscribe
   ================================================== -->
    <section id="subscribe">
- 
+
       <div class="row section-head">
- 
+
          <div class="twelve columns">
- 
+
             <h1>Stay tuned!</h1>
- 
+
             <p>Keep visiting this site to see refreshed data every day, or subscribe to our social networks!</p>
- 
+
          </div>
- 
+
       </div>
- 
+
    </section>  <!-- Subscribe Section End-->
- 
- 
-   <!-- Footer
-  ================================================== -->
+
+
+<!-- Footer
+ ================================================== -->
    <footer>
- 
+
       <div class="row">
- 
+
          <div class="six columns info">
- 
+
             <div class="footer-logo">
                <a href="#">
                   <img src="{{ url_for('static', filename='images/orbit-logo.png') }}" alt="Orbit Logo" />
                </a>
             </div>
- 
-            <p>Built for Hack4Good 2016 by Josep de Cid, Pau Campanya, Gabriel Alcàntara and Pau Risa.</p>
- 
+            <br><br><br>
+            <p>Built for Hack4Good 2016 by Josep de Cid, Pau Campaña, Gabriel Alcàntara and Pau Risa.</p>
+
          </div>
- 
+
          <div class="six columns right-cols">
- 
+
             <div class="row">
- 
+
                <div class="columns">
-                  <h3 class="social">Pau Risa</h3>
+                  <h3 class="social">Facebook</h3>
                   <ul>
-                     <li><a href="https://www.facebook.com/pau.risa" target="_blank">Facebook</a></li>
-                     <li><a href="https://twitter.com/Megauap" target="_blank">Twitter</a></li>
-                     <li><a href="https://www.linkedin.com/in/pau-risa-7ba98aba" target="_blank">Linkedin</a></li>
+                     <li><a href="https://www.facebook.com/jdecid96" target="_blank">Josep de Cid</a></li>
+                     <li><a href="https://www.facebook.com/pau.risa" target="_blank">Pau Risa</a></li>
+                      <li><a href="https://www.facebook.com/pau.laner.90" target="_blank">Pau Campaña</a></li>
+                      <li><a href="https://www.facebook.com/gabrielalcantara.93" target="_blank">Gabriel Alcàntara</a></li>
+                      <li><a href="https://www.facebook.com/elisabetfarrecamara" target="_blank">Elisabet Farré</a></li>
                   </ul>
                </div>
                <div class="columns">
-                  <h3 class="social">Pau Risa</h3>
+                  <h3 class="social">Linkedin</h3>
                   <ul>
-                     <li><a href="https://www.facebook.com/pau.risa" target="_blank">Facebook</a></li>
-                     <li><a href="https://twitter.com/Megauap" target="_blank">Twitter</a></li>
-                     <li><a href="https://www.linkedin.com/in/pau-risa-7ba98aba" target="_blank">Linkedin</a></li>
+                     <li><a href="https://wwww.linkedin.com/in/josep-de-cid-rodr%C3%ADguez-6788b4103" target="_blank">Josep de Cid</a></li>
+                     <li><a href="https://www.linkedin.com/in/pau-risa-7ba98aba" target="_blank">Pau Risa</a></li>
+                      <li><a href="https://www.linkedin.com/in/pau-campa%C3%B1a-castello-b9b28410b" target="_blank">Pau Campaña</a></li>
+                      <li><a href="https://www.linkedin.com/in/gabrielalcantara" target="_blank">Gabriel Alcàntara</a></li>
+                      <li><a href="#" target="_blank">Elisabet Farré</a></li>
                   </ul>
                </div>
                <div class="columns">
-                  <h3 class="social">Pau Risa</h3>
+                  <h3 class="social">Github</h3>
                   <ul>
-                     <li><a href="https://www.facebook.com/pau.risa" target="_blank">Facebook</a></li>
-                     <li><a href="https://twitter.com/Megauap" target="_blank">Twitter</a></li>
-                     <li><a href="https://www.linkedin.com/in/pau-risa-7ba98aba" target="_blank">Linkedin</a></li>
-                  </ul>
-               </div>
-               <div class="columns">
-                  <h3 class="social">Pau Risa</h3>
-                  <ul>
-                     <li><a href="https://www.facebook.com/pau.risa" target="_blank">Facebook</a></li>
-                     <li><a href="https://twitter.com/Megauap" target="_blank">Twitter</a></li>
-                     <li><a href="https://www.linkedin.com/in/pau-risa-7ba98aba" target="_blank">Linkedin</a></li>
+                     <li><a href="https://github.com/JosepRivaille" target="_blank">Josep de Cid</a></li>
+                     <li><a href="https://github.com/Megauap" target="_blank">Pau Risa</a></li>
+                      <li><a href="#" target="_blank">Pau Campaña</a></li>
+                      <li><a href="#" target="_blank">Gabriel Alcàntara</a></li>
+                      <li><a href="#" target="_blank">Elisabet Farré</a></li>
                   </ul>
                </div>
             </div> <!-- Nested Row End -->
- 
+
          </div>
- 
+
          <div id="go-top">
             <a class="smoothscroll" title="Back to Top" href="#hero"><i class="icon-up-open"></i></a>
          </div>
- 
+
       </div> <!-- Row End -->
- 
+
    </footer> <!-- Footer End-->
 
    <!-- Java Script

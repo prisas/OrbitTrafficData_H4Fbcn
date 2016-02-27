@@ -1,4 +1,0 @@
-CREATE TABLE barcelona IF NOT EXISTS (
-	street_code integer PRIMARY KEY NOT NULL,
-	present integer NOT NULL,
-	future integer NOT NULL);
